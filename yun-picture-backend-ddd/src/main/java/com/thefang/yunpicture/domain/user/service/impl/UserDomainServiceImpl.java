@@ -18,7 +18,7 @@ import com.thefang.yunpicture.interfaces.dto.user.UserQueryRequest;
 import com.thefang.yunpicture.interfaces.dto.user.UserRegisterRequest;
 import com.thefang.yunpicture.interfaces.vo.user.LoginUserVO;
 import com.thefang.yunpicture.interfaces.vo.user.UserVO;
-import com.thefang.yunpicturebackend.manager.auth.StpKit;
+import com.thefang.yunpicture.shared.auth.StpKit;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;

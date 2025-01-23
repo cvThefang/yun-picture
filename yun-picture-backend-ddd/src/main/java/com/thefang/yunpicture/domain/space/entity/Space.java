@@ -93,7 +93,7 @@ public class Space implements Serializable {
     /**
      * 校验空间
      */
-    public void validSpace(boolean add){
+    public void validSpace(boolean add) {
         ThrowUtils.throwIf(this == null, ErrorCode.PARAMS_ERROR);
         // 从对象中取值
         String spaceName = this.getSpaceName();

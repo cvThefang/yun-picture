@@ -61,7 +61,7 @@ spring:
             type: CLASS_BASED
             props:
               strategy: standard
-              algorithmClassName: com.thefang.yunpicturebackend.manager.sharding.PictureShardingAlgorithm
+              algorithmClassName: com.thefang.yunpicture.shared.sharding.PictureShardingAlgorithm
     props:
       # 打印sql  （仅在开发环境打印日志） 线上环境不建议开启
       sql-show: true
@@ -94,7 +94,7 @@ knife4j:
         group-name:
         api-rule: package
         api-rule-resources:
-          - com.thefang.yunpicturebackend.controller
+          - com.thefang.yunpicture.interfaces.controller
 ## 对象存储配置（需要从腾讯云获取）
 #cos:
 #  client:

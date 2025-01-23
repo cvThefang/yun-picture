@@ -11,23 +11,19 @@ import com.thefang.yunpicture.infrastructure.exception.ErrorCode;
 import com.thefang.yunpicture.infrastructure.exception.ThrowUtils;
 import com.thefang.yunpicture.interfaces.assembler.SpaceAssembler;
 import com.thefang.yunpicture.interfaces.dto.space.*;
-import com.thefang.yunpicturebackend.manager.auth.SpaceUserAuthManager;
+import com.thefang.yunpicture.shared.auth.SpaceUserAuthManager;
 import com.thefang.yunpicture.domain.space.entity.Space;
 import com.thefang.yunpicture.domain.user.entity.User;
-import com.thefang.yunpicture.domain.space.valueobject.SpaceLevelEnum;
 import com.thefang.yunpicture.interfaces.vo.space.SpaceVO;
 import com.thefang.yunpicture.application.service.SpaceApplicationService;
 import com.thefang.yunpicture.application.service.UserApplicationService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * @Description 空间相关的接口
