@@ -9,10 +9,10 @@ import com.qcloud.cos.model.PutObjectResult;
 import com.qcloud.cos.model.ciModel.persistence.CIObject;
 import com.qcloud.cos.model.ciModel.persistence.ImageInfo;
 import com.qcloud.cos.model.ciModel.persistence.ProcessResults;
-import com.thefang.yunpicturebackend.config.CosClientConfig;
-import com.thefang.yunpicturebackend.exception.BusinessException;
-import com.thefang.yunpicturebackend.exception.ErrorCode;
-import com.thefang.yunpicturebackend.manager.CosManager;
+import com.thefang.yunpicture.infrastructure.config.CosClientConfig;
+import com.thefang.yunpicture.infrastructure.exception.BusinessException;
+import com.thefang.yunpicture.infrastructure.exception.ErrorCode;
+import com.thefang.yunpicture.infrastructure.api.CosManager;
 import com.thefang.yunpicturebackend.model.dto.file.UploadPictureResult;
 import lombok.extern.slf4j.Slf4j;
 

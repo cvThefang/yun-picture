@@ -1,7 +1,7 @@
 package com.thefang.yunpicturebackend.manager.websocket.disruptor;
 
 import com.thefang.yunpicturebackend.manager.websocket.model.PictureEditRequestMessage;
-import com.thefang.yunpicturebackend.model.entity.User;
+import com.thefang.yunpicture.domain.user.entity.User;
 import lombok.Data;
 import org.springframework.web.socket.WebSocketSession;
 

@@ -1,0 +1,32 @@
+package com.thefang.yunpicture.interfaces.dto.space;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * @Description 空间创建请求对象
+ * @Author Thefang
+ * @Create 2025/1/3
+ */
+@Data
+public class SpaceAddRequest implements Serializable {
+
+    private static final long serialVersionUID = 8006046486188364261L;
+
+    /**
+     * 空间名称
+     */
+    private String spaceName;
+
+    /**
+     * 空间级别：0-普通版 1-专业版 2-旗舰版
+     */
+    private Integer spaceLevel;
+
+    /**
+     * 空间类型：0-私有 1-团队
+     */
+    private Integer spaceType;
+
+}

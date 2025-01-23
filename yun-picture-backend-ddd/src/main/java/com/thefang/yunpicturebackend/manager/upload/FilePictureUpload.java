@@ -1,8 +1,8 @@
 package com.thefang.yunpicturebackend.manager.upload;
 
 import cn.hutool.core.io.FileUtil;
-import com.thefang.yunpicturebackend.exception.ErrorCode;
-import com.thefang.yunpicturebackend.exception.ThrowUtils;
+import com.thefang.yunpicture.infrastructure.exception.ErrorCode;
+import com.thefang.yunpicture.infrastructure.exception.ThrowUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 

@@ -1,6 +1,6 @@
 package com.thefang.yunpicturebackend.manager.websocket.model;
 
-import com.thefang.yunpicturebackend.model.vo.UserVO;
+import com.thefang.yunpicture.interfaces.vo.user.UserVO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

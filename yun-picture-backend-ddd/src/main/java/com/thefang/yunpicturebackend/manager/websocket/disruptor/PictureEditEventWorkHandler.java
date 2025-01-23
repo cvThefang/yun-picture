@@ -6,8 +6,8 @@ import com.thefang.yunpicturebackend.manager.websocket.PictureEditHandler;
 import com.thefang.yunpicturebackend.manager.websocket.model.PictureEditMessageTypeEnum;
 import com.thefang.yunpicturebackend.manager.websocket.model.PictureEditRequestMessage;
 import com.thefang.yunpicturebackend.manager.websocket.model.PictureEditResponseMessage;
-import com.thefang.yunpicturebackend.model.entity.User;
-import com.thefang.yunpicturebackend.service.UserService;
+import com.thefang.yunpicture.domain.user.entity.User;
+import com.thefang.yunpicture.application.service.UserApplicationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.TextMessage;
@@ -25,7 +25,7 @@ import javax.annotation.Resource;
 public class PictureEditEventWorkHandler implements WorkHandler<PictureEditEvent> {
 
     @Resource
-    private UserService userService;
+    private UserApplicationService userApplicationService;
 
     @Resource
     private PictureEditHandler pictureEditHandler;
@@ -60,7 +60,7 @@ public class PictureEditEventWorkHandler implements WorkHandler<PictureEditEvent
                 PictureEditResponseMessage pictureEditResponseMessage = new PictureEditResponseMessage();
                 pictureEditResponseMessage.setType(PictureEditMessageTypeEnum.ERROR.getValue());
                 pictureEditResponseMessage.setMessage("消息类型错误");
-                pictureEditResponseMessage.setUser(userService.getUserVO(user));
+                pictureEditResponseMessage.setUser(userApplicationService.getUserVO(user));
                 session.sendMessage(new TextMessage(JSONUtil.toJsonStr(pictureEditResponseMessage)));
         }
     }

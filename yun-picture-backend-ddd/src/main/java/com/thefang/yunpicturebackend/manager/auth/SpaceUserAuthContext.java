@@ -1,8 +1,8 @@
 package com.thefang.yunpicturebackend.manager.auth;
 
-import com.thefang.yunpicturebackend.model.entity.Picture;
-import com.thefang.yunpicturebackend.model.entity.Space;
-import com.thefang.yunpicturebackend.model.entity.SpaceUser;
+import com.thefang.yunpicture.domain.picture.entity.Picture;
+import com.thefang.yunpicture.domain.space.entity.Space;
+import com.thefang.yunpicture.domain.space.entity.SpaceUser;
 import lombok.Data;
 
 /**

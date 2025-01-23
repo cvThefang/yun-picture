@@ -1,7 +1,7 @@
 package com.thefang.yunpicturebackend.controller;
 
-import com.thefang.yunpicturebackend.common.BaseResponse;
-import com.thefang.yunpicturebackend.common.ResultUtils;
+import com.thefang.yunpicture.infrastructure.common.BaseResponse;
+import com.thefang.yunpicture.infrastructure.common.ResultUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
